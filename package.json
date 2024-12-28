@@ -11,6 +11,8 @@
   "dependencies": {
     "@nextui-org/react": "latest",
     "autoprefixer": "latest",
+    "jodit": "^4.2.47",
+    "jodit-react": "^4.1.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"

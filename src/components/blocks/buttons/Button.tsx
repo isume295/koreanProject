@@ -5,6 +5,7 @@ export const Button = ({
   label,
   disabled = true,
   backgroundColor,
+  borderRadius,
   textStyle,
   width,
   ...rest
@@ -12,7 +13,7 @@ export const Button = ({
   return (
     <NButton
       disabled={disabled}
-      className={`rounded-[6px] py-[12px] px-[14px] ${
+      className={`${borderRadius} py-[12px] px-[14px] ${
         width ? width : "w-full"
       } ${disabled ? "bg-[#ABAFB7]" : backgroundColor} ${textStyle}`}
       {...rest}

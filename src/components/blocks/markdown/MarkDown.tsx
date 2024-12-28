@@ -1,7 +1,6 @@
 'use client';
-import JoditEditor from 'jodit-react';
 import dynamic from 'next/dynamic';
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 
 const MarkDown = ({editorConatinerStyles}:{editorConatinerStyles?:string}) => {

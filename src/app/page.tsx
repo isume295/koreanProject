@@ -1,5 +1,7 @@
-"use client";
-import React from "react";
-export default function Home() {
-  return <div className="">Home</div>;
-}
+import { redirect } from "next/navigation";
+
+const page = () => {
+  redirect("/admin/home");
+};
+
+export default page;

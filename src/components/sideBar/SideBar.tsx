@@ -25,7 +25,12 @@ const SideBar = ({ children }: ISideBar) => {
         </div>
         <div className="flex flex-col gap-6 w-full max-h-full overflow-y-scroll">
           <div className="flex flex-col gap-4 justify-center items-center w-full">
-            <Link href="/admin/home" className="text-[20px] font-[400]">
+            <Link
+              href="/admin/home"
+              className={`text-[20px] font-[400] ${
+                routerPathName === "/admin/home" ? "text-[#255DF9]" : ""
+              }`}
+            >
               홈
             </Link>
 

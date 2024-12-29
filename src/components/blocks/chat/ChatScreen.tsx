@@ -49,7 +49,7 @@ const ChatScreen: React.FC<ChatScreenProps> = ({ senderName, profileName }) => {
       <div className="p-4 space-y-[16px] overflow-y-scroll overflow-x-hidden scrollbar-hide">
         {messages.map((message, index) => {
           return (
-            <div>
+            <div key={index}>
               {message.incoming && (
                 <div className="flex flex-row gap-[10px] justify-start">
                   <p className="flex justify-start text-[16px] text-grey-font-light py-[12px]">

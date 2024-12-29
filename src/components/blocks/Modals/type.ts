@@ -16,4 +16,7 @@ export type TableModalType = {
   content: React.ReactNode;
   disabledButtonLabel: string;
   enabledButtonLabel: string;
+  handleDisabledButton: () => void;
+  handleEnabledButton: () => void;
+  height?: string;
 };

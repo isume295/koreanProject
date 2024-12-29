@@ -9,7 +9,7 @@ export const RadioButton = ({
   optionStyles,
 }: RadioButtonProps) => {
   return (
-    <div className="radio-group">
+    <div className="radio-group flex gap-[20px]">
       {options.map((option) => (
         <label
           key={option}

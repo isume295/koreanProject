@@ -5,13 +5,14 @@ export interface IInput extends InputProps {
   type: string;
   width?: string;
   placeholder: string;
+  containerStyle?: string;
 }
 
 export interface ICameraInput {
   imageSrc: string;
   label: string;
 }
-export interface InPutNoLabelProp{
+export interface InPutNoLabelProp {
   defaultValue?: string;
   handelChangeText?: () => void;
   mainStyles?: string;

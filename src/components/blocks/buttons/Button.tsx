@@ -2,8 +2,9 @@ import { Button as NButton } from "@nextui-org/react";
 import { IButton } from "./type";
 
 export const Button = ({
+  padding = "",
   label,
-  disabled = true,
+  disabled = false,
   backgroundColor,
   borderRadius,
   textStyle,
@@ -13,9 +14,9 @@ export const Button = ({
   return (
     <NButton
       disabled={disabled}
-      className={`${borderRadius} py-[12px] px-[14px] ${
-        width ? width : "w-full"
-      } ${disabled ? "bg-[#ABAFB7]" : backgroundColor} ${textStyle}`}
+      className={`${borderRadius} ${padding} ${width ? width : "w-full"} ${
+        disabled ? "bg-[#ABAFB7]" : backgroundColor
+      } ${textStyle}`}
       {...rest}
     >
       {label}

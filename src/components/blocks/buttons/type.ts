@@ -7,11 +7,12 @@ export interface IButton extends ButtonProps {
   borderRadius: string;
   textStyle: string;
   width?: string;
+  padding?: string;
 }
 export interface RadioButtonProps {
   options: string[];
   gapOfRadio?: string;
   onChange: (value: string) => void;
   selectedValue?: string;
-  optionStyles?:string
+  optionStyles?: string;
 }

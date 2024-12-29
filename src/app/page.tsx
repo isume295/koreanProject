@@ -1,7 +1,10 @@
-import { redirect } from "next/navigation";
+import React from 'react'
+import MyCalendar from '../components/blocks/calendar/Calendar'
 
 const page = () => {
-  redirect("/admin/home");
-};
+  return (
+    <div><MyCalendar/></div>
+  )
+}
 
-export default page;
+export default page

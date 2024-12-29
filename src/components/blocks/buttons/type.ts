@@ -8,3 +8,10 @@ export interface IButton extends ButtonProps {
   textStyle: string;
   width?: string;
 }
+export interface RadioButtonProps {
+  options: string[];
+  gapOfRadio?: string;
+  onChange: (value: string) => void;
+  selectedValue?: string;
+  optionStyles?:string
+}

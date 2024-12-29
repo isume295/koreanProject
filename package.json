@@ -13,6 +13,7 @@
     "autoprefixer": "latest",
     "next": "latest",
     "react": "latest",
+    "react-big-calendar": "^1.17.1",
     "react-dom": "latest",
     "recharts": "^2.15.0"
   },

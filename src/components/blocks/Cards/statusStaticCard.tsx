@@ -1,17 +1,6 @@
 import React from "react";
-interface content {
-  amount: string;
-  status: string;
-}
-interface StatusStaticCardProps {
-  items: content[];
-  containerStyles?: string;
-  title: string;
-  titleStyles?: string;
-  titleContainerStyles?: string;
-  contentStyles?:string
-  contentContainerStyles?: string;
-}
+import { StatusStaticCardProps } from "./type";
+
 const StatusStaticCard = ({
   items,
   containerStyles,

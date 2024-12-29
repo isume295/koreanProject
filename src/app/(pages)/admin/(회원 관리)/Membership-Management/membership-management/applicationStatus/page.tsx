@@ -1,7 +1,7 @@
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
 import React from "react";
-import ApplyForMemebership from "../../components/membershipManagement/ApplyForMemebership";
 import CompletedOrRejected from "../../components/membershipManagement/CompletedOrRejected";
+import ApplyForMemebership from "../../components/membershipManagement/ApplyForMemebership";
 
 const MembershipApplicationStatus = () => {
   const Tabs = [

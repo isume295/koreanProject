@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-// import { Button } from "@/src/components/blocks/buttons/Button";
-// import FeeManagementTable from "../components/FeeManagementTable";
+import { Button } from "@/src/components/blocks/buttons/Button";
+import FeeManagementTable from "../components/FeeManagementTable";
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
-import EditFeeManagementTable from "../components/EditFeeManagementTable";
+// import EditFeeManagementTable from "../components/EditFeeManagementTable";
 
 const FeeManagement = () => {
   const Tabs = [
@@ -11,7 +11,7 @@ const FeeManagement = () => {
       title: "굴착기",
       content: (
         <div className="space-y-[20px]">
-          {/* <FeeManagementTable />
+          <FeeManagementTable />
           <div className="flex justify-end items-center">
             <Button
               label={"수정"}
@@ -19,8 +19,8 @@ const FeeManagement = () => {
               borderRadius={"rounded-[5px]"}
               textStyle={"text-[14px] text-white w-[148px]"}
             />
-          </div> */}
-          <EditFeeManagementTable />
+          </div>
+          {/* <EditFeeManagementTable /> */}
         </div>
       ),
     },

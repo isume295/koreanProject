@@ -26,7 +26,7 @@ const HomeTable = () => {
     <thead className="">
         <tr className="">
           {dropdownData.map((dropdown, index) => (
-            <th key={index} className="  py-1 ">
+            <th key={index} className="   ">
               <DropDown
                 options={dropdown.options}
                 defaultSelectedKeys={dropdown.defaultSelectedKeys}

@@ -7,12 +7,13 @@ const DropDown = ({
   options,
   defaultSelectedKeys,
   selectStyles,
+  selectContainerStyles,
   insideStyles,
   selectedItemRadius = "rounded-md",
 }: DropDownProp) => {
   return (
-    <div className="flex items-center">
-      <div>
+    <div className={`flex ${selectContainerStyles} items-center`}>
+      <div className={`${selectContainerStyles}`}>
         <Select
           className="text-[14px] font-[400] text-[#333333]"
           classNames={{

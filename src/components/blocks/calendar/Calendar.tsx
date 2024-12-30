@@ -23,17 +23,17 @@ const calendarEvents = [
 ];
 
 const MyCalendar = () => (
-  <div className='bg-slate-300 p-[30px] flex justify-center'>
+  
     <Calendar
       localizer={localizer}
       events={calendarEvents}
       startAccessor="start"
       endAccessor="end"
       views={['month']} // Only show month view
-      style={{ height: 900,width:1400 }}
+      style={{ height: 1400,width:'100% '}}
       defaultView="month"  // Make sure the default view is month
     />
-  </div>
+ 
 )
 
 export default MyCalendar

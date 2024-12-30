@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ChatListTable from "./ChatListTable";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import { Button } from "@/src/components/blocks/buttons/Button";
 
 const ChatLists = () => {
   const [activePage, setActivePage] = useState(1);

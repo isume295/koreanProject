@@ -1,8 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { ChatListType } from "./type";
-import ChatScreen from "@/src/components/blocks/chat/ChatScreen";
-import { ChatType } from "@/src/components/blocks/chat/type";
 
 const tabs = [
   "번호",
@@ -118,11 +116,11 @@ const data: ChatListType[] = [
 ];
 
 const ChatListTable = () => {
-  const [selectedChat, setSelectedChat] = useState<string | null>(null);
+  // const [selectedChat, setSelectedChat] = useState<string | null>(null);
 
-  const seeDetails = (sender: string) => {
-    setSelectedChat(sender);
-  };
+  // const seeDetails = (sender: string) => {
+  // setSelectedChat(sender);
+  // };
 
   return (
     <div className="bg-[white] w-full text-[14px]">
@@ -159,7 +157,7 @@ const ChatListTable = () => {
             {row.equipmentRepresentative}
           </div>
           <div
-            onClick={() => seeDetails(row.sender)}
+            // onClick={() => seeDetails(row.sender)}
             className="flex items-center justify-center py-[10px] underline decoration-main-light-color text-main-light-color cursor-pointer border-r-[1px] border-r-[#F1F3F6]"
           >
             {row.details}

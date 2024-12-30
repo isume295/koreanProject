@@ -1,5 +1,4 @@
 import React from "react";
-import FeeManagementTable from "../components/FeeManagementTable";
 import FeeManagementTableEditing from "../components/FeeManagementTableEditing";
 import { Button } from "@/src/components/blocks/buttons/Button";
 

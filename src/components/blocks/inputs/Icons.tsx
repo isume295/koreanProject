@@ -10,15 +10,15 @@ export const SearchIcon = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="9" cy="9" r="6.3" stroke="#4A4E57" stroke-width="1.4" />
+        <circle cx="9" cy="9" r="6.3" stroke="#4A4E57" strokeWidth="1.4" />
         <line
           x1="17.0101"
           y1="18"
           x2="13.6364"
           y2="14.6263"
           stroke="#4A4E57"
-          stroke-width="1.4"
-          stroke-linecap="round"
+          strokeWidth="1.4"
+          strokeLinecap="round"
         />
       </svg>
     </div>

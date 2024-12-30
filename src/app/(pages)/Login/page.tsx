@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "@/src/app/assets/logo.svg";
 import Image from "next/image";
-import Chart from "@/src/components/blocks/chart/chart";
+
 
 const LoginPage = () => {
   return (

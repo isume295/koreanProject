@@ -2,10 +2,7 @@
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import React from "react";
 import { option1, option2, option3, option4, option5, option6, option7, SelectedOption1, SelectedOption2, SelectedOption3, SelectedOption4, SelectedOption5, SelectedOption6, SelectedOption7 } from "./OptionData";
-interface HomeTableProps {
-  titleContainerStyles: string;
-  titleStyles: string;
-}
+
 const HomeTable = () => {
   const data = [
     ["2025.08.23 14:11:21", "5,000", "5,000","5,000","5,000","5,000","5,000"],

@@ -4,7 +4,7 @@ import StatusStaticCard from "@/src/components/blocks/Cards/statusStaticCard";
 import React from "react";
 import CustomerInquiry from "./components/CustomerInquiry";
 import Chart from "@/src/components/blocks/chart/chart";
-import { SearchIcon } from "@/src/components/blocks/inputs/Icons";
+
 import SearchInput from "./components/SearchInput";
 import HomeTable from "./components/HomeTable";
 

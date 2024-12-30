@@ -4,9 +4,10 @@ import StatusStaticCard from "@/src/components/blocks/Cards/statusStaticCard";
 import React from "react";
 import CustomerInquiry from "./components/CustomerInquiry";
 import Chart from "@/src/components/blocks/chart/chart";
-import Charts from "./components/charts";
+import { SearchIcon } from "@/src/components/blocks/inputs/Icons";
+import SearchInput from "./components/SearchInput";
+import HomeTable from "./components/HomeTable";
 
-<<<<<<< HEAD
 const Home = () => {
   const items1 = [
     { amount: "20,000", status: "충전시도" },
@@ -60,14 +61,14 @@ const Home = () => {
               borderRadius="rounded-[10px]"
               textStyle="text-sm text-[#4B4F58]"
             />
+            
           </div>
-
-          <div>search input</div>
+          <SearchInput/>
         </div>
       </header>
       <div className="w-full flex gap-3 mt-5 ">
         <div className="">
-          <div className="flex gap-3 w-full">
+          <div className="flex gap-5 w-full">
             <StaticsCard
               title="발주사 가입 수"
               titleContainerStyles="px-[27px] py-[11px]"
@@ -144,24 +145,24 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className=" w-2/3  ">
+        <div className=" w-full  ">
           <div className="rounded-[10px]  bg-white ">
             <div className="border-b-1 px-[17px] py-[11px]">
               <h3 className="font-bold">가입 현황</h3>
             </div>
             <div className="py-[30px]">
-            <Chart />
+              <Chart />
             </div>
-           
+            <HomeTable/>
           </div>
+          
+         
+          
         </div>
+       
       </div>
     </section>
   );
-=======
-const App = () => {
-  return <div></div>;
->>>>>>> ef04ee0a00d6d2ce9e009c7b3e7da572829a9ff3
 };
 
-export default App;
+export default Home;

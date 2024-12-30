@@ -1,10 +1,26 @@
 import React from "react";
-import FeeManagementTable from "./components/FeeManagementTable";
+import FeeManagementTable from "../components/FeeManagementTable";
+import FeeManagementTableEditing from "../components/FeeManagementTableEditing";
+import { Button } from "@/src/components/blocks/buttons/Button";
 
 const FeeManagement = () => {
   return (
     <div>
-      <FeeManagementTable />
+      <FeeManagementTableEditing />
+      <div>
+        <Button
+          label={""}
+          backgroundColor={""}
+          borderRadius={""}
+          textStyle={""}
+        />
+        <Button
+          label={""}
+          backgroundColor={""}
+          borderRadius={""}
+          textStyle={""}
+        />
+      </div>
     </div>
   );
 };

@@ -4,20 +4,35 @@ const FeeManagementGrid = () => {
   const data = [
     {
       product: "미니 (008-003)",
-      fees: [40, "5%", 2.0, 60, "8%", 4.8, 1100, "3%", 33.0],
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
     },
-    { product: "02LC", fees: [40, "5%", 2.0, 60, "8%", 4.8, 1100, "3%", 33.0] },
-    { product: "03W", fees: [45, "5%", 2.25, 70, "8%", 5.6, 1200, "3%", 36.0] },
-    { product: "06W", fees: [45, "5%", 2.25, 75, "8%", 6.0, 1300, "3%", 39.0] },
+    {
+      product: "02LC",
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
+    },
+    {
+      product: "03W",
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
+    },
+    {
+      product: "06W",
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
+    },
     {
       product: "06LC",
-      fees: [45, "5%", 2.25, 75, "8%", 6.0, 1300, "3%", 39.0],
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
     },
-    { product: "08W", fees: [60, "5%", 3.0, 80, "8%", 6.4, 1500, "3%", 45.0] },
-    { product: "10LC", fees: [40, "5%", 2.0, 60, "8%", 4.8, 1300, "3%", 39.0] },
+    {
+      product: "08W",
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
+    },
+    {
+      product: "10LC",
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
+    },
     {
       product: "기타 대형",
-      fees: [60, "5%", 3.0, 60, "8%", 4.8, 2000, "3%", 60.0],
+      fees: [1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100, 1100],
     },
   ];
 
@@ -60,7 +75,7 @@ const FeeManagementGrid = () => {
             key={rowIndex}
             className={`grid grid-cols-10 text-center text-[14px] text-[#A3A6AB] bg-white `}
           >
-            <div className=" py-[10px]  border-b-[1px] border-x-[1px] border-b-[#F1F3F6] border-r-[#D4D8DE]">
+            <div className="flex items-center justify-center py-[10px]  border-b-[1px] border-x-[1px] border-b-[#F1F3F6] border-r-[#D4D8DE]">
               {row.product}
             </div>
             {row.fees.map((fee, feeIndex) => (

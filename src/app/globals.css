@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,55 +17,51 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans KR", serif;
 }
 
 .rbc-calendar {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 36px;
-  border: 1px solid #FFFFFF ;
+  border: 1px solid #ffffff;
   border-radius: 12px;
-
 }
-.rbc-toolbar{
+.rbc-toolbar {
   margin-bottom: 36px !important;
 }
-.rbc-month-view{
-  border: 1px solid #FFFFFF !important;
+.rbc-month-view {
+  border: 1px solid #ffffff !important;
   border-radius: 12px;
 }
 .rbc-header {
   position: relative;
-  background-color: #F1F3F6;
-  color:#A2ABAF;
+  background-color: #f1f3f6;
+  color: #a2abaf;
   font-weight: bold;
   padding: 24px !important;
   text-align: center;
   gap: 24px !important;
-  border-left:none !important
+  border-left: none !important;
 }
-.rbc-header ::before{
+.rbc-header ::before {
   content: "";
   position: absolute;
-  top: 20px; 
-  bottom: 10px; 
-  right: 0; 
+  top: 20px;
+  bottom: 10px;
+  right: 0;
   width: 1px;
-  background-color: #DADFE2; 
+  background-color: #dadfe2;
   height: 30px;
 }
 
-.rbc-button-link{
+.rbc-button-link {
   font-size: 16px !important;
   font-weight: 14px !important;
-  margin:24px !important;
+  margin: 24px !important;
 }
 
-
-
-
 .rbc-day-bg {
-  position: relative; 
+  position: relative;
   background-color: #ffffff;
   border-left: none !important;
 }
@@ -74,29 +72,28 @@ body {
 .rbc-day-bg::before {
   content: "";
   position: absolute;
-  top: 20px; 
-  bottom: 10px; 
-  right: 0; 
-  width: 1px; 
-  background-color: #DADFE2; 
+  top: 20px;
+  bottom: 10px;
+  right: 0;
+  width: 1px;
+  background-color: #dadfe2;
   height: 110px;
 }
 
-
 .rbc-now {
-  background-color: #DADFE2;
+  background-color: #dadfe2;
 }
 
 .rbc-event {
-  background-color: #F7D5D4 !important ;
+  background-color: #f7d5d4 !important ;
   color: white;
-height: 80px;
+  height: 80px;
   padding: 30px;
   font-size: 12px;
 }
 
 .rbc-event:hover {
-  background-color: #F7D5D4;
+  background-color: #f7d5d4;
   cursor: pointer;
 }
 
@@ -105,26 +102,24 @@ height: 80px;
   padding: 2px 5px;
   white-space: wrap !important;
 }
-.rbc-today{
+.rbc-today {
   background-color: white !important;
 }
-.rbc-now{
+.rbc-now {
   background-color: white !important;
 }
-.rbc-off-range{
+.rbc-off-range {
   color: white !important;
   background-color: white !important;
-
 }
-.rbc-off-range-bg{
+.rbc-off-range-bg {
   background-color: white !important;
 }
-
 
 .rbc-event-title {
   font-weight: bold;
 }
 
 .rbc-weekend {
-  background-color: #F7D5D4
+  background-color: #f7d5d4;
 }

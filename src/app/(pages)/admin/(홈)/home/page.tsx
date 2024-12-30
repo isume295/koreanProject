@@ -6,6 +6,7 @@ import CustomerInquiry from "./components/CustomerInquiry";
 import Chart from "@/src/components/blocks/chart/chart";
 import Charts from "./components/charts";
 
+<<<<<<< HEAD
 const Home = () => {
   const items1 = [
     { amount: "20,000", status: "충전시도" },
@@ -157,6 +158,10 @@ const Home = () => {
       </div>
     </section>
   );
+=======
+const App = () => {
+  return <div></div>;
+>>>>>>> ef04ee0a00d6d2ce9e009c7b3e7da572829a9ff3
 };
 
-export default Home;
+export default App;

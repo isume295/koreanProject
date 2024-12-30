@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { CustomTabProps } from "./type";
 const CustomTab = ({
   items,
-  padding, 
+  padding,
   containerPadding,
   borderColor,
   textStyle = "text-base",
   raduis = "rounded-none",
-  separator ,
+  separator,
   selectedBgColor = "bg-black",
-  selectedBorderColor ,
-  unselectedBorderColor ,
+  selectedBorderColor,
+  unselectedBorderColor,
   selectedTextColor = "text-white",
   unselectedBgColor = "bg-white",
   unselectedTextColor = "text-gray-700",
@@ -58,7 +58,7 @@ const CustomTab = ({
         id={`tab-panel-${selectedIndex}`}
         role="tabpanel"
         aria-labelledby={`tab-${selectedIndex}`}
-        className="p-4"
+        className="py-4"
       >
         {items[selectedIndex]?.content}
       </div>

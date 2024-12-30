@@ -2,8 +2,7 @@
 
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
 import React from "react";
-import ManualCalendar from "./manualCalendar";
-import List from "./List";
+
 import OrderRegistrationForm from "./OrderRegistrationForm";
 
 const OrderRegistration = () => {

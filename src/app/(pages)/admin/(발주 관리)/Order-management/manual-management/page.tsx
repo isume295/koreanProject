@@ -1,7 +1,7 @@
-import MyCalendar from "@/src/components/blocks/calendar/Calendar";
+
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
 import React from "react";
-import Equipment from "../../../(회원 관리)/Membership-Management/components/membershipManagement/Equipment";
+
 import ManualCalendar from "./components/manualCalendar";
 import List from "./components/List";
 
@@ -23,6 +23,7 @@ const ManualManagement = () => {
         containerPadding="p-[6px]"
         raduis="rounded-[14px]"
         selectedBgColor="bg-[#404251]"
+
       />
       <div className=" w-fit absolute top-1 right-1  py-[20px] px-[30px] rounded-[100px] bg-white">
         <div className="flex gap-2">

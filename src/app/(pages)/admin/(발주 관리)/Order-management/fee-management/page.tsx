@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Button } from "@/src/components/blocks/buttons/Button";
-import FeeManagementTable from "../components/FeeManagementTable";
+// import { Button } from "@/src/components/blocks/buttons/Button";
+// import FeeManagementTable from "../components/FeeManagementTable";
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
 import EditFeeManagementTable from "../components/EditFeeManagementTable";
 

@@ -10,7 +10,7 @@ const TextModal: React.FC<textModal> = ({
   enabledButtonLabel,
 }) => {
   return (
-    <div className="inline-block justify-center  p-10 space-y-10 bg-white w-[470px]  ">
+    <div className="inline-block justify-center  p-10 space-y-10 bg-white min-w-[470px]  ">
       <div className="text-center">
         <p className="text-[20px] ">{title}</p>
         <p className="text-[20px] ">{subTitle}</p>

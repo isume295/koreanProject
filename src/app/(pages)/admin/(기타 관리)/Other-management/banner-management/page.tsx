@@ -4,13 +4,18 @@ import BannerTable from "./components/BannerTable";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
+import DetailEditModal from "./components/DetailEditModal";
+import CheckModal from "./components/CheckModal";
+import RegistrationModal from "./components/RegistrationModal";
+import EditBanner from "./components/EditBanner";
 
 const BannerManagement = () => {
   const [activePage, setActivePage] = useState(1);
 
   return (
     <div className="space-y-[20px]">
-      <div className="flex justify-center items-center rounded-[100px] bg-[white] py-[10px] px-[30px] w-auto max-w-[500px] gap-[24px]">
+      <EditBanner />
+      {/* <div className="flex justify-center items-center rounded-[100px] bg-[white] py-[10px] px-[30px] w-auto max-w-[500px] gap-[24px]">
         <span className="text-[14px] font-[400] text-[#333333]">등록일</span>
         <RadioButton
           options={["전체", "설정"]}
@@ -68,7 +73,7 @@ const BannerManagement = () => {
             </p>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

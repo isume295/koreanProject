@@ -1,7 +1,7 @@
 "use client";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
-import React from "react";
+import React, { useState } from "react";
 import DetailandEditForm from "./DetailandEditForm";
 
 const DetailandEdit = () => {
@@ -12,6 +12,7 @@ const DetailandEdit = () => {
     { title: "덤프", content: <h1>hello</h1> },
     { title: "로더・불도저", content: <h1>hello</h1> },
   ];
+  const [selectedValue, setSelectedValue] = useState('');
   return (
     <div>
       <div className="flex justify-center items-center rounded-[100px] bg-[white] py-[20px] px-[30px] w-auto max-w-[470px] gap-[24px]">
@@ -19,8 +20,8 @@ const DetailandEdit = () => {
 
         <RadioButton
           options={["모집중", "배차완료", "수금완료", "배차취소"]}
-          selectedValue="모집중"
-          onChange={() => {}}
+          selectedValue={selectedValue}
+          onChange={(value) => setSelectedValue(value)}
           optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
         />
       </div>

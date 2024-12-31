@@ -8,7 +8,8 @@ import React, { useState } from "react";
 
 
 const DetailandEditForm = () => {
-  const [selectedValues, setSelectedValues] = useState<string[]>([]); // Empty initially
+  const [selectedValues, setSelectedValues] = useState<string[]>([]); 
+  const [selecetedValue,setSelectedValue]=useState('')
 
   const handleCheckboxChange = (updatedValues: string[]) => {
     setSelectedValues(updatedValues); // Update the state
@@ -192,8 +193,8 @@ const DetailandEditForm = () => {
               <p className="w-[81px] text-sm text-[#404251]">세금계산서</p>
               <RadioButton
                 options={["필요", "불필요"]}
-                selectedValue="필요"
-                onChange={() => {}}
+                selectedValue={selecetedValue}
+                onChange={(value) => {setSelectedValue(value)}}
                 optionStyles="text-sm text-[#333333]"
               />
             </div>

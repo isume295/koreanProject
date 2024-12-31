@@ -3,7 +3,8 @@ import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import React from "react";
+import { group } from "console";
+import React, { useState } from "react";
 
 const TopContent = ({
   onPressExcelButton,
@@ -26,6 +27,15 @@ const TopContent = ({
       label: "사업자명",
     },
   ];
+  const [radioGroups, setRadioGroups] = useState({
+    group1: '',
+    group2: '',
+    group3:''
+  });
+
+  const handleChange = (group: string, value: string) => {
+    setRadioGroups((prev) => ({ ...prev, [group]: value }));
+  };
   return (
     <div className="flex flex-col gap-4">
       {/* first content */}
@@ -33,8 +43,8 @@ const TopContent = ({
         <span className="text-[14px] font-[400] text-[#333333]">등록일</span>
         <RadioButton
           options={["전체", "설정"]}
-          selectedValue="전체"
-          onChange={() => {}}
+          selectedValue={radioGroups.group1}
+        onChange={(value) => handleChange('group1', value)}
           optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
         />
         <div className="flex justify-center items-center gap-[5px] text-[#333333]">
@@ -55,8 +65,8 @@ const TopContent = ({
           </span>
           <RadioButton
             options={["전체", "정상", "정지"]}
-            selectedValue="전체"
-            onChange={() => {}}
+            selectedValue={radioGroups.group2}
+        onChange={(value) => handleChange('group2', value)}
             optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
           />
         </div>
@@ -64,8 +74,8 @@ const TopContent = ({
           <span className="text-[14px] font-[400] text-[#333333]">구분</span>
           <RadioButton
             options={["전체", "카카오", "네이버"]}
-            selectedValue="전체"
-            onChange={() => {}}
+            selectedValue={radioGroups.group3}
+        onChange={(value) => handleChange('group3', value)}
             optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
           />
         </div>

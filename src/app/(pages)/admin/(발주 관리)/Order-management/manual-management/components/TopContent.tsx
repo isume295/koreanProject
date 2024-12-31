@@ -1,8 +1,8 @@
-
+"use client";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import React from "react";
+import React, { useState } from "react";
 
 const TopContent = () => {
   const dropDownOptions = [
@@ -19,6 +19,14 @@ const TopContent = () => {
       label: "등록일",
     },
   ];
+  const [radioGroups, setRadioGroups] = useState({
+    group1: "",
+    group2: "",
+  });
+
+  const handleChange = (group: string, value: string) => {
+    setRadioGroups((prev) => ({ ...prev, [group]: value }));
+  };
   return (
     <div className="flex flex-col gap-4">
       {/* first content */}
@@ -33,8 +41,10 @@ const TopContent = () => {
         />
         <RadioButton
           options={["전체", "설정"]}
-          selectedValue="전체"
-          onChange={() => {}}
+          selectedValue={radioGroups.group1}
+          onChange={(value) => {
+            handleChange("group1", value);
+          }}
           optionStyles="flex  flex-col gap-2 text-[14px] font-[400] text-[#333333]"
         />
         <div className="flex justify-center items-center gap-[5px] text-[#333333]">
@@ -54,8 +64,10 @@ const TopContent = () => {
 
           <RadioButton
             options={["전체", "모집중", "배차완료", "수금완료", "배차취소"]}
-            selectedValue="전체"
-            onChange={() => {}}
+            selectedValue={radioGroups.group2}
+            onChange={(value) => {
+              handleChange("group2", value);
+            }}
             optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
           />
         </div>

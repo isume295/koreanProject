@@ -5,6 +5,10 @@ export interface ITable {
   hasPagination?: boolean;
   title?: string;
   data: any[];
+  buttonLabel?: string;
+  buttonWidth?: string;
+  buttonRadius?: string;
+  onClick?: () => void;
 }
 
 export interface IHeader {

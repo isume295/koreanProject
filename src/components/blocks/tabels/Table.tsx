@@ -10,12 +10,17 @@ import {
   Pagination,
 } from "@nextui-org/react";
 import { IHeader, ITable } from "./type";
+import { Button } from "../buttons/Button";
 
 const Table = ({
   header,
   data,
   hasPagination = false,
   title = undefined,
+  buttonLabel = undefined,
+  buttonWidth = "w-[60px]",
+  buttonRadius = "rounded-[100px]",
+  onClick = () => {},
 }: ITable) => {
   return (
     <div className="w-full">
@@ -36,9 +41,30 @@ const Table = ({
           ],
         }}
         topContent={
-          title ? (
-            <div className="font-[400] text-[16px] text-[#333333]">{title}</div>
-          ) : null
+          <div className="flex justify-between items-center">
+            {title ? (
+              <div className="font-[400] text-[16px] text-[#333333]">
+                {title}
+              </div>
+            ) : null}
+
+            {buttonLabel && (
+              <Button
+                label={buttonLabel}
+                backgroundColor={"bg-[#404251]"}
+                width={buttonWidth}
+                borderRadius={buttonRadius}
+                textStyle={"text-[14px] font-[400] text-white"}
+                padding="py-4 px-6"
+                onPress={() => {
+                  onClick();
+                }}
+              />
+              // <button className="bg-[#255DF9] text-white font-[500] text-[14px] rounded-[5px] w-[106px] h-[40px]">
+              //   {buttonLabel}
+              // </button>
+            )}
+          </div>
         }
         bottomContent={
           <div className="flex w-full justify-center rounded-none mt-8">

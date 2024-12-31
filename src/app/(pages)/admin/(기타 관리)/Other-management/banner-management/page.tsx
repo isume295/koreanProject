@@ -14,7 +14,7 @@ const BannerManagement = () => {
 
   return (
     <div className="space-y-[20px]">
-      <EditBanner />
+      <RegistrationModal />
       {/* <div className="flex justify-center items-center rounded-[100px] bg-[white] py-[10px] px-[30px] w-auto max-w-[500px] gap-[24px]">
         <span className="text-[14px] font-[400] text-[#333333]">등록일</span>
         <RadioButton

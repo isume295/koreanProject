@@ -3,8 +3,12 @@ import { Button } from "@/src/components/blocks/buttons/Button";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
 import Table from "@/src/components/blocks/tabels/Table";
-import React from "react";
+import React, { useState } from "react";
 import data from "./data";
+import Modal from "@/src/components/blocks/Modals/Modal";
+import { useDisclosure } from "@nextui-org/react";
+import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
+import TextInput from "@/src/components/blocks/inputs/Input";
 
 const Membership = () => {
   const dropDownOptions = [
@@ -22,9 +26,26 @@ const Membership = () => {
     },
   ];
 
+  const [radioGroups, setRadioGroups] = useState({
+    group1: "",
+    group2: "",
+    group3: "",
+  });
+
+  const handleChange = (group: string, value: string) => {
+    setRadioGroups((prev) => ({ ...prev, [group]: value }));
+  };
+
+  // const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const {
+    isOpen: isOpenForm,
+    onOpen: onOpenWithForm,
+    onOpenChange: onOpenChangeWithForm,
+  } = useDisclosure();
+
   const { membershipHeader, membershipData } = data({
     onClickToRelease: () => {
-      console.log("clicked");
+      onOpenWithForm();
     },
   });
   return (
@@ -69,6 +90,69 @@ const Membership = () => {
           hasPagination={true}
         />
       </div>
+
+      {/* <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        cancelBtnLabel="취소"
+        buttonLabel={"해제"}
+      >
+        <div className=" w-full flex justify-center items-center pt-[50px] pb-[30px]">
+          <span className="text-[20px] font-[400] text-[#333333]">
+            차단을 해제하시겠습니까?
+          </span>
+        </div>
+      </Modal> */}
+
+      <Modal
+        isOpen={isOpenForm}
+        onOpenChange={onOpenChangeWithForm}
+        cancelBtnLabel="취소"
+        buttonLabel={"해제"}
+        modalWidthInPercent="max-w-[40%]"
+      >
+        <div className=" w-full flex flex-col gap-2 justify-center items-center py-8">
+          <div className="flex w-full gap-2">
+            <span className="text-[14px] font-[400] text-[#333333] w-[105px]">
+              구분
+            </span>
+            <RadioButton
+              options={["장비사업자", "발주사"]}
+              selectedValue={radioGroups.group1}
+              onChange={(value) => handleChange("group1", value)}
+              optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
+            />
+          </div>
+
+          <div className="flex x-full">
+            <TextInput type={"text"} label="최근 접속" placeholder={""} />
+          </div>
+        </div>
+      </Modal>
+
+      {/* <Modal
+        isOpen={isOpenForm}
+        onOpenChange={onOpenChangeWithForm}
+        buttonLabel={"해제"}
+      >
+        <div className=" w-full flex justify-center items-center pt-[50px] pb-[30px]">
+          <span className="text-[20px] font-[400] text-[#333333] w-[189px] text-center">
+            이미 제재된 회원입니다 다시 확인해 주세요
+          </span>
+        </div>
+      </Modal> */}
+
+      {/* <Modal
+        isOpen={isOpenForm}
+        onOpenChange={onOpenChangeWithForm}
+        buttonLabel={"해제"}
+      >
+        <div className=" w-full flex justify-center items-center pt-[50px] pb-[30px]">
+          <span className="text-[20px] font-[400] text-[#333333] w-[225px] text-center">
+            일치하는 아이디가 없습니다 다시 확인해주세요
+          </span>
+        </div>
+      </Modal> */}
     </div>
   );
 };

@@ -22,7 +22,10 @@ const data = ({ onClickToRelease }: { onClickToRelease: () => void }) => {
     reason: "테스트 아이디",
     manager: "홍길동",
     toRelease: (
-      <span onClick={onClickToRelease} className="text-[#F05858] underline">
+      <span
+        onClick={onClickToRelease}
+        className="text-[#F05858] underline cursor-pointer"
+      >
         해제하기
       </span>
     ),

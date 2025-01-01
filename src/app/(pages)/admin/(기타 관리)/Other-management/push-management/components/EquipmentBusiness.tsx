@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import EquipmentTopContent from "./EquipmentTopContent";
 import EquipmentBusinessTable from "./EquipmentBusinessTable";
 import { Button } from "@/src/components/blocks/buttons/Button";

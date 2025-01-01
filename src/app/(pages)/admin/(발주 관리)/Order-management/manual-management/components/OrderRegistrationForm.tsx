@@ -64,8 +64,7 @@ const OrderRegistrationForm = () => {
                 onChange={handleCheckboxChange}
                 gap="gap-[20px]"
                 inputTextStyles=" text-sm text-[#404251] w-full"
-                inputStyles=""
-              />
+                inputStyles="" Label={false}              />
             </div>
           </div>
         </div>
@@ -138,8 +137,7 @@ const OrderRegistrationForm = () => {
                 options={["제안 받기"]}
                 selectedValues={selectedValues}
                 alignment="horizontal"
-                onChange={handleCheckboxChange}
-              />
+                onChange={handleCheckboxChange} Label={false}              />
             </div>
           </div>
         </div>

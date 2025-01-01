@@ -1,25 +1,24 @@
+'use client'
+import { RadioButton } from '@/src/components/blocks/buttons/RadioButton';
+import { SearchInput } from '@/src/components/blocks/inputs/SearchInput';
+import React, { useState } from 'react'
 
-import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
-import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import React, { useState } from "react";
-
-const UsageMTopcontent = () => {
-  const [radioGroups, setRadioGroups] = useState({
-    group1: "",
-    group2: "",
-    group3: "",
-  });
-
-  const handleChange = (group: string, value: string) => {
-    setRadioGroups((prev) => ({ ...prev, [group]: value }));
-  };
-  const [selecetedValue, setSelectedValue] = useState("");
-  const [showModal, setShowModal] = useState(false);
+const PaymentHTopContent = () => {
+    const [radioGroups, setRadioGroups] = useState({
+        group1: "",
+        group2: "",
+        group3: "",
+      });
+    
+      const handleChange = (group: string, value: string) => {
+        setRadioGroups((prev) => ({ ...prev, [group]: value }));
+      };
+      
   return (
     <section>
       <header>
         <div className="flex mt-1 justify-center items-center rounded-[100px] bg-[white] py-[10px] px-[30px] w-auto max-w-[500px] gap-2">
-          <span className="text-[14px] font-[400] text-[#333333]">변동일</span>
+          <span className="text-[14px] font-[400] text-[#333333]">결제일</span>
           <RadioButton
             options={["전체", "설정"]}
             selectedValue={radioGroups.group1}
@@ -40,7 +39,7 @@ const UsageMTopcontent = () => {
         <div className="flex mt-5 justify-center items-center rounded-[100px] bg-[white] py-[20px] px-[30px] w-auto max-w-[450px] gap-[24px]">
           <span className="text-[14px] font-[400] text-[#333333]">상태</span>
           <RadioButton
-            options={["전체", "충전", "적립", "차감", "사용"]}
+            options={["전체", "결제 완료", "결제 실패"]}
             selectedValue={radioGroups.group2}
             onChange={(value) => handleChange("group2", value)}
             optionStyles="flex flex-col gap-12 text-[14px] font-[400] text-[#333333]"
@@ -58,7 +57,7 @@ const UsageMTopcontent = () => {
         </div>
       </header>
     </section>
-  );
-};
+  )
+}
 
-export default UsageMTopcontent;
+export default PaymentHTopContent

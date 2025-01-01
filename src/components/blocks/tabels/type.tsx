@@ -8,11 +8,12 @@ export interface ITable {
   buttonLabel?: string;
   buttonWidth?: string;
   buttonRadius?: string;
+  content?:boolean
   onClick?: () => void;
 }
 
 export interface IHeader {
-  label: string;
+  label: string|ReactNode;
 }
 
 export interface IData {

@@ -13,12 +13,11 @@ const WithDrawalAppTop = () => {
   const handleChange = (group: string, value: string) => {
     setRadioGroups((prev) => ({ ...prev, [group]: value }));
   };
-  const [selecetedValue, setSelectedValue] = useState("");
-  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-2">
       
-        <div className="flex mt-5 justify-center items-center rounded-[100px] bg-[white] py-[20px] px-[30px] w-auto max-w-[450px] gap-[24px]">
+        <div className="flex mt-1 justify-center items-center rounded-[100px] bg-[white] py-[20px] px-[30px] w-auto max-w-[450px] gap-[24px]">
           <span className="text-[14px] font-[400] text-[#333333]">상태</span>
           <RadioButton
             options={["전체", "신청중", "승인", "거절"]}

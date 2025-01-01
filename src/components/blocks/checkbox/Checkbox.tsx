@@ -10,7 +10,8 @@ const Checkbox= ({
   alignment = 'vertical',
   gap = 'gap-2',
   inputStyles=" w-4 h-4",
-  inputTextStyles="text-sm"
+  inputTextStyles="text-sm",
+  Label=true
 }:CheckboxProps) => {
   const handleCheckboxChange = (option: string) => {
     if (selectedValues.includes(option)) {
@@ -38,11 +39,11 @@ const Checkbox= ({
             onChange={() => handleCheckboxChange(option)}
             className={inputStyles}
           />
-          <span
+          {Label && <span
             className={inputTextStyles}
           >
             {option}
-          </span>
+          </span>}
         </label>
       ))}
     </div>

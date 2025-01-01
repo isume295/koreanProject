@@ -24,7 +24,14 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={'/admin/Order-management/manual-management/DetailandEdit'} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link
+        href={"/admin/Order-management/manual-management/DetailandEdit"}
+        className="text-[#429FFF] underline"
+      >
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -46,7 +53,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -68,7 +79,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -90,7 +105,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -112,7 +131,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -134,7 +157,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -156,7 +183,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -178,7 +209,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -200,7 +235,11 @@ export const ManualListData = [
       </div>
     ),
     AssigmentDate: "2023-08-10 00:00",
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     Manager: "이중재",
     Expense: "400,000",
     Period: (
@@ -240,7 +279,11 @@ export const applyForMemebershipData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     approval: (
@@ -278,7 +321,11 @@ export const applyForMemebershipData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     approval: (
@@ -316,7 +363,11 @@ export const applyForMemebershipData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     approval: (
@@ -354,7 +405,11 @@ export const applyForMemebershipData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     approval: (
@@ -407,7 +462,11 @@ export const completeOrRejectData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     processingDateAndTime: (
@@ -433,7 +492,11 @@ export const completeOrRejectData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     processingDateAndTime: (
@@ -459,7 +522,11 @@ export const completeOrRejectData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     processingDateAndTime: (
@@ -485,7 +552,11 @@ export const completeOrRejectData = [
         <span>00:00</span>
       </div>
     ),
-    Situation: <Link href={''} className="text-[#429FFF] underline">모집중</Link>,
+    Situation: (
+      <Link href={""} className="text-[#429FFF] underline">
+        모집중
+      </Link>
+    ),
     id: "Fdod1",
     Period: "이중재",
     processingDateAndTime: (
@@ -496,5 +567,37 @@ export const completeOrRejectData = [
     ),
     processingDetails: <span className="text-[#A3A6AB]">승인</span>,
     processingManager: "처리 관리자",
+  },
+];
+export const SendModalHeader = [
+  { label: "번호" },
+  { label: "발송일시" },
+  { label: "발송담당자" },
+  { label: "내용" },
+];
+export const SendModalTableData = [
+  {
+    number: 1,
+    timeAndDate: (
+      <div className="flex flex-col justify-center items-center gap-1">
+        <span>2023-01-08</span>
+        <span>00:00</span>
+      </div>
+    ),
+    ShippingManager: "발주사",
+    Detail:
+      "<장비파트너 배차 안내> 발주처 : 상호환경산업개발 연락처 : 010-1111-1111 제원 : 6W (채바가지) 위치 : 부산 경서동 일시 : 09-10 09:00 ~17:00 작업내용 : NNNNNN 대금결제 : 09-12",
+  },
+  {
+    number: 2,
+    timeAndDate: (
+      <div className="flex flex-col justify-center items-center gap-1">
+        <span>2023-01-08</span>
+        <span>00:00</span>
+      </div>
+    ),
+    ShippingManager: "매칭담당자",
+    Detail:
+      "ㅇㅇ",
   },
 ];

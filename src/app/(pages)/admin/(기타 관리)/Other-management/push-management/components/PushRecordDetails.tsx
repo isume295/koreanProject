@@ -4,7 +4,7 @@ import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import InputNoLabel from "@/src/components/blocks/inputs/datePickerInput";
 import React from "react";
 
-const PushRecordDetails = ({ handleClick }: { handleClick: () => void }) => {
+const PushRecordDetails = () => {
   return (
     <div className="w-full bg-white p-10">
       <div className="grid grid-cols-12 gap-y-[20px]">

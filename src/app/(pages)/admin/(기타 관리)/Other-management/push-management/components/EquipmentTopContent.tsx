@@ -128,11 +128,11 @@ const EquipmentTopContent = () => {
           <span className="text-[14px] font-[400] text-[#333333]">
             단가검색
           </span>
-          {items.map(() => (
-            <div className="flex gap-[10px] items-center">
+          {items.map((item, index) => (
+            <div key={index} className="flex gap-[10px] items-center">
               <div className="bg-[#F2F3F5] w-[94px] h-[44px] rounded-[100px]"></div>
               <span className="text-[14px] font-[400] text-[#333333]">
-                년 이상 경력
+                {item}
               </span>
             </div>
           ))}

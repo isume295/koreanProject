@@ -1,18 +1,12 @@
 "use client";
 import React from "react";
-import PushRegistration from "../components/PushRegistration";
 import { Button } from "@/src/components/blocks/buttons/Button";
-import { useRouter } from "next/navigation";
 import PushRecordDetails from "../components/PushRecordDetails";
 
 const PushRecords = () => {
-  const routes = useRouter();
-  const handleNavigation = () => {
-    routes.push("/admin/Other-Management/push-management/records");
-  };
   return (
     <div className="flex flex-col gap-[20px]">
-      <PushRecordDetails handleClick={handleNavigation} />
+      <PushRecordDetails />
       <div className="flex items-center justify-center gap-[16px]">
         <Button
           label={"취소"}

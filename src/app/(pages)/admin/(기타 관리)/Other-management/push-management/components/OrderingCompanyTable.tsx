@@ -1,5 +1,5 @@
 import React from "react";
-import { OrderingCompanyType } from "../../components/type";
+import { OrderingCompanyType } from "./type";
 
 const tabs = [
   "번호",

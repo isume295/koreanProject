@@ -1,15 +1,9 @@
-import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 const PushTopContent = () => {
-  const router = useRouter();
-  const handleClick = () => {
-    router.push("/admin/Other-management/push-management/registration");
-  };
   const dropDownOptions = [
     { key: "1", label: "발송일" },
     { key: "2", label: "발송일" },

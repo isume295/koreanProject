@@ -1,7 +1,8 @@
 import React from "react";
+import PaymentHistory from "./components/PaymentHistory";
 
-const PaymentHistory = () => {
-  return <div>PaymentHistory</div>;
+const Page = () => {
+  return <PaymentHistory/>;
 };
 
-export default PaymentHistory;
+export default Page;

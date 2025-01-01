@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from "react";
+import React, { useState } from "react";
 import {
   Table as NextTable,
   TableHeader,
@@ -11,6 +11,7 @@ import {
 } from "@nextui-org/react";
 import { IHeader, ITable } from "./type";
 import { Button } from "../buttons/Button";
+import { RadioButton } from "../buttons/RadioButton";
 
 const Table = ({
   header,
@@ -20,8 +21,10 @@ const Table = ({
   buttonLabel = undefined,
   buttonWidth = "w-[60px]",
   buttonRadius = "rounded-[100px]",
+  content = false,
   onClick = () => {},
 }: ITable) => {
+  const [selectedValue, setSelectedValue] = useState("");
   return (
     <div className="w-full">
       <NextTable
@@ -41,28 +44,50 @@ const Table = ({
           ],
         }}
         topContent={
-          <div className="flex justify-between items-center">
-            {title ? (
-              <div className="font-[400] text-[16px] text-[#333333]">
-                {title}
-              </div>
-            ) : null}
+          <div className="flex flex-col gap-[28px]">
+            <div className="flex justify-between items-center">
+              {title ? (
+                <div className="font-[400] text-[16px] text-[#333333]">
+                  {title}
+                </div>
+              ) : null}
 
-            {buttonLabel && (
-              <Button
-                label={buttonLabel}
-                backgroundColor={"bg-[#404251]"}
-                width={buttonWidth}
-                borderRadius={buttonRadius}
-                textStyle={"text-[14px] font-[400] text-white"}
-                padding="py-4 px-6"
-                onPress={() => {
-                  onClick();
-                }}
-              />
-              // <button className="bg-[#255DF9] text-white font-[500] text-[14px] rounded-[5px] w-[106px] h-[40px]">
-              //   {buttonLabel}
-              // </button>
+              {buttonLabel && (
+                <Button
+                  label={buttonLabel}
+                  backgroundColor={"bg-[#404251]"}
+                  width={buttonWidth}
+                  borderRadius={buttonRadius}
+                  textStyle={"text-[14px] font-[400] text-white"}
+                  padding="py-4 px-6"
+                  onPress={() => {
+                    onClick();
+                  }}
+                />
+                // <button className="bg-[#255DF9] text-white font-[500] text-[14px] rounded-[5px] w-[106px] h-[40px]">
+                //   {buttonLabel}
+                // </button>
+              )}
+            </div>
+            {content && (
+              <div className="flex items-center gap-5">
+                <p className="text-[#333333]">선택한 리스트의 상태를</p>
+                <RadioButton
+                  options={["승인", "거절"]}
+                  selectedValue={selectedValue}
+                  onChange={(value) => {
+                    setSelectedValue(value);
+                  }}
+                />
+                <Button
+                  label="승인"
+                  backgroundColor="bg-[#4A4E57]"
+                  borderRadius="rounded-[4px]"
+                  textStyle="text-sm text-white"
+                  padding="py-[6px] px-[10px]"
+                  width="w-[26px]"
+                />
+              </div>
             )}
           </div>
         }

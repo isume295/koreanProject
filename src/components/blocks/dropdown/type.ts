@@ -9,5 +9,6 @@ export interface DropDownProp{
         selectStyles?: string;
         insideStyles?: string;
         selectedItemRadius?: string; 
+        selectContainerStyles?:string
       
 }

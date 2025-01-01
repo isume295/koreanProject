@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
@@ -5,9 +6,9 @@ import InputNoLabel from "@/src/components/blocks/inputs/datePickerInput";
 import TextInput from "@/src/components/blocks/inputs/Input";
 import React from "react";
 
-const RegistrationModal = () => {
+const EditBannerModal = () => {
   return (
-    <div className="flex flex-col text-[14px] space-y-[40px] bg-white p-10 w-[679px]">
+    <div className="flex flex-col text-[14px] space-y-[20px] bg-white p-10 w-[679px]">
       <div className="grid grid-cols-11 gap-[20px]">
         <p className="col-span-2 text-[#333333] py-[10px]">상태</p>
         <div className="col-span-9 py-[10px]">
@@ -36,7 +37,7 @@ const RegistrationModal = () => {
           <div className="flex items-center gap-[10px]">
             <Button
               label={"파일 선택"}
-              backgroundColor={"#A3A6AB"}
+              backgroundColor={"bg-[#A3A6AB]"}
               borderRadius={"rounded-[5px]"}
               textStyle={"text-white w-[65px]"}
             />
@@ -136,4 +137,4 @@ const RegistrationModal = () => {
   );
 };
 
-export default RegistrationModal;
+export default EditBannerModal;

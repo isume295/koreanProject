@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
@@ -27,7 +28,7 @@ const RegistrationModal = () => {
           <div className="flex items-center gap-[10px]">
             <Button
               label={"파일 선택"}
-              backgroundColor={"#A3A6AB"}
+              backgroundColor={"bg-[#A3A6AB]"}
               borderRadius={"rounded-[5px]"}
               textStyle={"text-white w-[65px]"}
             />

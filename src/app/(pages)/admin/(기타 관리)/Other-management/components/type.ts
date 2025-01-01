@@ -9,15 +9,3 @@ export type bannerType = {
   registrationDate: string;
   manager: string;
 };
-
-export type PushType = {
-  num: number;
-  creationDateTime: string;
-  title: string;
-  situation: string;
-  numOfShipments: number;
-  numOfSuccess: number;
-  numOfFailures: number;
-  registrationDateTime: string;
-  manager: string;
-};

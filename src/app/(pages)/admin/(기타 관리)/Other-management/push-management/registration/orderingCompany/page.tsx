@@ -1,7 +1,7 @@
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
 import React from "react";
-import OrderingCompanyTable from "../../../components/OrderingCompanyTable";
-import OrderingCompanyDetails from "../../../components/OrderingCompanyDetails";
+import OrderingCompanyTable from "../../components/OrderingCompanyTable";
+import OrderingCompanyDetails from "../../components/OrderingCompanyDetails";
 import EquipmentBusiness from "../../components/EquipmentBusiness";
 
 const OrderingCompany = () => {

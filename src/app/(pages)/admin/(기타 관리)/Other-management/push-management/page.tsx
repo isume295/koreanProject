@@ -1,15 +1,18 @@
 "use client";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import React, { useState } from "react";
-import PushTable from "../components/PushTable";
+import PushTable from "./components/PushTable";
 import { useRouter } from "next/navigation";
 import PushTopContent from "./components/PushTopContent";
 
 const PushManagement = () => {
   const router = useRouter();
   const [activePage, setActivePage] = useState(1);
-  const handleClick = () => {
+  const handleButtonClick = () => {
     router.push("/admin/Other-management/push-management/registration");
+  };
+  const handleLinkClick = () => {
+    router.push("/admin/Other-management/push-management/records");
   };
   return (
     <div className="space-y-[20px]">
@@ -24,10 +27,10 @@ const PushManagement = () => {
             textStyle={"text-[14px]  text-white"}
             width="w-[50px]"
             padding="px-[20px] py-[16px]"
-            onPress={handleClick}
+            onPress={handleButtonClick}
           />
         </div>
-        <PushTable handleClickOnLink={handleClick} />
+        <PushTable handleClickOnLink={handleLinkClick} />
         <div className="flex items-center justify-center text-[14px] text-[#4B505D] gap-[20px]">
           {Array.from({ length: 10 }, (_, index) => (
             <p

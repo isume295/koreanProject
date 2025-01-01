@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import OrderingCompanyTable from "./OrderingCompanyTable";
-import OrderingTopContent from "../push-management/components/OrderingTopContent";
+import OrderingTopContent from "./OrderingTopContent";
 
 const OrderingCompanyDetails = () => {
   const [activePage, setActivePage] = useState(1);

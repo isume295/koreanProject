@@ -8,7 +8,7 @@ import React from "react";
 const PushRegistration = ({ handleClick }: { handleClick: () => void }) => {
   return (
     <div className="w-full bg-white   p-10">
-      <div className="grid grid-cols-12 space-y-[20px]">
+      <div className="grid grid-cols-12 gap-y-[20px]">
         <p className="col-span-1 py-[10px]">구분</p>
         <div className="flex items-center gap-[100px] col-span-11">
           <div className="col-span-5">
@@ -30,12 +30,10 @@ const PushRegistration = ({ handleClick }: { handleClick: () => void }) => {
               />
               <Button
                 label={"이용자 선택"}
-                backgroundColor={"#A3A6AB"}
+                backgroundColor={"bg-[#A3A6AB]"}
                 borderRadius={"rounded-[5px]"}
-                textStyle={"w-[100px]"}
-                onPress={() => {
-                  handleClick;
-                }}
+                textStyle={"w-[100px] text-white"}
+                onPress={handleClick}
               />
             </div>
           </div>

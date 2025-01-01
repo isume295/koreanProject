@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import PushRegistration from "../../components/PushRegistration";
+import PushRegistration from "../components/PushRegistration";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { useRouter } from "next/navigation";
 
@@ -8,7 +8,7 @@ const PushRegistrationPage = () => {
   const routes = useRouter();
   const handleNavigation = () => {
     routes.push(
-      "/admin/Other-Management/push-management/registration/orderingCompany"
+      "/admin/Other-management/push-management/registration/orderingCompany"
     );
   };
   return (

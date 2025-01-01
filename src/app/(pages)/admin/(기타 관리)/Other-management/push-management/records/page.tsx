@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import PushRegistration from "../../components/PushRegistration";
+import PushRegistration from "../components/PushRegistration";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { useRouter } from "next/navigation";
 import PushRecordDetails from "../components/PushRecordDetails";

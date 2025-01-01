@@ -22,7 +22,7 @@ const PushRecordDetails = ({ handleClick }: { handleClick: () => void }) => {
           </div>
           <div className="flex items-center gap-[20px] col-span-6">
             <p>대상 설정</p>
-            <div className="flex gap-[10px]">
+            <div className="flex items-center gap-[10px]">
               <RadioButton
                 options={["전체이용자", "이용자 선택"]}
                 selectedValue="전체이용자"
@@ -34,10 +34,11 @@ const PushRecordDetails = ({ handleClick }: { handleClick: () => void }) => {
                 backgroundColor={"bg-[#A3A6AB]"}
                 borderRadius={"rounded-[5px]"}
                 textStyle={"w-[100px] text-white"}
-                onPress={() => {
-                  handleClick;
-                }}
+                // onPress={() => {
+                //   handleClick;
+                // }}
               />
+              <span className="text-[14px] text-[#A3A6AB]">00명 선택</span>
             </div>
           </div>
         </div>

@@ -13,8 +13,7 @@ const UsageMTopcontent = () => {
   const handleChange = (group: string, value: string) => {
     setRadioGroups((prev) => ({ ...prev, [group]: value }));
   };
-  const [selecetedValue, setSelectedValue] = useState("");
-  const [showModal, setShowModal] = useState(false);
+ 
   return (
     <section>
       <header>

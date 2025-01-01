@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import EquimentPITopContent from "./EquimentPITopContent";
 import { EquipementPTTableData, EquipmentPIHeader } from "./EquipmentTableData";
 import Table from "@/src/components/blocks/tabels/Table";
-import TextModal from "@/src/components/blocks/Modals/TextModal";
+
 import ModalWrapper from "@/src/components/blocks/Modals/ModalWrapper";
 import { Button } from "@/src/components/blocks/buttons/Button";
 
 const IssuanceOfTaxInvoice = () => {
   const [showModal, setShowModal] = useState(false);
-  const handleChange=()=>{
-    setShowModal(!showModal)
-  }
+  const handleChange = () => {
+    setShowModal(!showModal);
+  };
   return (
     <div>
       <EquimentPITopContent />
@@ -20,9 +20,8 @@ const IssuanceOfTaxInvoice = () => {
           header={EquipmentPIHeader}
           title="N건의 게시물이 검색되었습니다(발행완료 N건  |   발행실패 N건)"
           hasPagination={true}
-        
         />
-        
+
         {showModal && (
           <ModalWrapper width="w-[470px] h-[242px]">
             <div className="flex flex-col justify-center items-center gap-[40px]">
@@ -39,7 +38,6 @@ const IssuanceOfTaxInvoice = () => {
                   textStyle="text-sm text-white"
                   onPress={handleChange}
                   width="w-[148px]"
-
                 />
                 <Button
                   label="재발행"
@@ -48,7 +46,6 @@ const IssuanceOfTaxInvoice = () => {
                   borderRadius="rounded-[5px]"
                   textStyle="text-sm text-white"
                   width="w-[148px]"
-
                 />
               </div>
             </div>

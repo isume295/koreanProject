@@ -3,7 +3,7 @@ import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import { group } from "console";
+
 import React, { useState } from "react";
 
 const TopContent = ({

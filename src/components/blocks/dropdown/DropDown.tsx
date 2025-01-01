@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { Select, SelectItem } from "@nextui-org/react";
 import { DropDownProp } from "./type";
@@ -9,15 +9,15 @@ const DropDown = ({
   selectStyles,
   selectContainerStyles,
   insideStyles,
-  selectedItemRadius = "rounded-md", 
-}:DropDownProp ) => {
+  selectedItemRadius = "rounded-md",
+}: DropDownProp) => {
   return (
     <div className={`flex ${selectContainerStyles} items-center`}>
       <div className={`${selectContainerStyles}`}>
         <Select
           classNames={{
-            mainWrapper: [`${selectStyles}`],
-            trigger: [`${insideStyles} ${selectedItemRadius}`], 
+            mainWrapper: [`${selectStyles} w-full`],
+            trigger: [`${insideStyles} ${selectedItemRadius} w-full`],
             value: ["text-[15px]"],
           }}
           disallowEmptySelection={true}

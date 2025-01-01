@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import BannerTable from "./components/BannerTable";
+import BannerTable from "../components/BannerTable";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";

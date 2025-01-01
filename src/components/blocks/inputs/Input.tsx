@@ -25,7 +25,7 @@ const TextInput = ({
         classNames={{
           mainWrapper: ` "w-full"`,
           input:
-            "placeholder:text-[#404251] placeholder:text-[13px] px-[0px] py-[12px]",
+            "placeholder:text-[#A3A6AB] placeholder:text-[13px] px-[0px] py-[12px]",
           label: "text-gray-500",
           inputWrapper: "border-1 border-[##E4E5EA] bg-white rounded-[8px]",
         }}

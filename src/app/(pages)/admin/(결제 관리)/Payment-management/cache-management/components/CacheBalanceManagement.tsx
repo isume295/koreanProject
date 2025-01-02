@@ -1,10 +1,7 @@
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
 import Table from "@/src/components/blocks/tabels/Table";
 import React from "react";
-import {
-  CacheBalanceHeader,
-  CacheBalanceTableData,
-} from "./CacheTableData";
+import { CacheBalanceHeader, CacheBalanceTableData } from "./CacheTableData";
 
 const CacheBalanceManagement = () => {
   return (

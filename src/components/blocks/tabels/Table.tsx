@@ -66,7 +66,6 @@ const Table = ({
                     }}
                   />
                 </div>
-
                 // <button className="bg-[#255DF9] text-white font-[500] text-[14px] rounded-[5px] w-[106px] h-[40px]">
                 //   {buttonLabel}
                 // </button>

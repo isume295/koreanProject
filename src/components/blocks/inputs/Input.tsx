@@ -4,6 +4,7 @@ import { IInput } from "./type";
 
 const TextInput = ({
   label,
+  labelColor,
   labelWidth = "w-[130px]",
   type,
   containerStyle,
@@ -31,6 +32,7 @@ const TextInput = ({
         }}
         placeholder={placeholder}
         type={type}
+        labelColor={labelColor}
         {...rest}
       />
     </div>

@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import {
     EquipmentBusinessHeader,
     EquipmentBusinessTableData,
-  PrivacyPolicaTableData,
-  PrivacyPolicyHeader,
+
 } from "./PrivacyPolicyData";
 import ModalWrapper from "@/src/components/blocks/Modals/ModalWrapper";
 import MarkDown from "@/src/components/blocks/markdown/MarkDown";

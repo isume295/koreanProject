@@ -2,7 +2,7 @@
 import CustomTab from "@/src/components/blocks/tabs/Tabs";
 import React from "react";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import UsageManagement from "../../../(결제 관리)/Payment-management/cache-management/components/usageManagement";
+
 import EquipmentBusiness from "./components/EquipmentBusiness";
 
 const Page = () => {

@@ -1,7 +1,11 @@
 import React from "react";
+import LocationInformationTermsAndConditions from "./components/LocationInformationTermsandCondition";
 
-const LocationInformationTermsAndConditions = () => {
-  return <div>LocationInformationTermsAndConditions</div>;
+const Page = () => {
+  
+  return(
+    <LocationInformationTermsAndConditions />
+  );
 };
 
-export default LocationInformationTermsAndConditions;
+export default Page;

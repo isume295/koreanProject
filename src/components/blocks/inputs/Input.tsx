@@ -4,6 +4,7 @@ import { IInput } from "./type";
 
 const TextInput = ({
   label,
+  labelColor,
   labelWidth = "w-[130px]",
   type,
   containerStyle,
@@ -30,6 +31,7 @@ const TextInput = ({
           inputWrapper: "border-1 border-[##E4E5EA] bg-white rounded-[8px]",
         }}
         placeholder={placeholder}
+        labelColor={labelColor}
         type={type}
         {...rest}
       />

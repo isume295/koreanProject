@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import ModalWrapper from "@/src/components/blocks/Modals/ModalWrapper";
 import MarkDown from "@/src/components/blocks/markdown/MarkDown";
 import InputNoLabel from "@/src/components/blocks/inputs/datePickerInput";
-import { EquipmentOperatorHeader, EquipmentOperatorTableData, OrderingCompanyHeader, OrderingCompanyTableData } from "./TermUseTableData";
+import { EquipmentOperatorHeader, EquipmentOperatorTableData, } from "./TermUseTableData";
 
 const OrderingCompany = () => {
   const [showRegistration, setShowRegistration] = useState(false);

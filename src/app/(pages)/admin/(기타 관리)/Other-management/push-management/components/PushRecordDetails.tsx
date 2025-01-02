@@ -1,10 +1,18 @@
+"use client";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import InputNoLabel from "@/src/components/blocks/inputs/datePickerInput";
-import React from "react";
+import React, { useState } from "react";
 
 const PushRecordDetails = () => {
+  const [selectedFirst, setSelectedFirst] = useState("전체");
+
+  const [selectedSecond, setSelectedSecond] = useState("전체이용자");
+  const [selectedThird, setSelectedThrid] = useState("전체이용자");
+
+  const [selectedFourth, setSelectedFourth] = useState("즉시");
+
   return (
     <div className="w-full bg-white p-10">
       <div className="grid grid-cols-12 gap-y-[20px]">
@@ -15,8 +23,8 @@ const PushRecordDetails = () => {
           <div className="col-span-5">
             <RadioButton
               options={["전체", "장비사업자", "발주사"]}
-              selectedValue="전체"
-              onChange={() => {}}
+              selectedValue={selectedFirst}
+              onChange={(value) => setSelectedFirst(value)}
               optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
             />
           </div>
@@ -25,8 +33,8 @@ const PushRecordDetails = () => {
             <div className="flex items-center gap-[10px]">
               <RadioButton
                 options={["전체이용자", "이용자 선택"]}
-                selectedValue="전체이용자"
-                onChange={() => {}}
+                selectedValue={selectedSecond}
+                onChange={(value) => setSelectedSecond(value)}
                 optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
               />
               <Button
@@ -47,8 +55,8 @@ const PushRecordDetails = () => {
           <div className="col-span-5">
             <RadioButton
               options={["전체이용자", "마케팅 수신동의자"]}
-              selectedValue="전체이용자"
-              onChange={() => {}}
+              selectedValue={selectedThird}
+              onChange={(value) => setSelectedThrid(value)}
               optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
             />
           </div>
@@ -56,8 +64,8 @@ const PushRecordDetails = () => {
             <p>발송일시</p>
             <RadioButton
               options={["즉시", "예약"]}
-              selectedValue="즉시"
-              onChange={() => {}}
+              selectedValue={selectedFourth}
+              onChange={(value) => setSelectedFourth(value)}
               optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
             />
             <div className="flex items-center gap-[10px]">

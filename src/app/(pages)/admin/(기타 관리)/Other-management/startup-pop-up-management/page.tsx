@@ -7,6 +7,7 @@ import BannerTable from "../components/BannerTable";
 
 const StartupPopupManagement = () => {
   const [activePage, setActivePage] = useState(1);
+  const [selectedFirst, setSelectedFirst] = useState("전체");
 
   return (
     <div className="space-y-[20px]">
@@ -14,8 +15,8 @@ const StartupPopupManagement = () => {
         <span className="text-[14px] font-[400] text-[#333333]">등록일</span>
         <RadioButton
           options={["전체", "설정"]}
-          selectedValue="전체"
-          onChange={() => {}}
+          selectedValue={selectedFirst}
+          onChange={(value) => setSelectedFirst(value)}
           optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
         />
         <div className="flex justify-center items-center gap-[5px] text-[#333333]">

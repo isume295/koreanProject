@@ -17,22 +17,16 @@ const EquipmentBusiness = () => {
   };
   return (
     <div>
-      <div className="flex justify-end">
-        <Button
-          label="등록"
-          backgroundColor="bg-[#404251]"
-          textStyle="text-sm text-white"
-          padding="px-[20px] py-[16px]"
-          borderRadius="rounded-[100px]"
-          width="w-[66px]"
-          onPress={handleRegistration}
-        />
-      </div>
-      <div className="mt-[14px]">
+
+      <div className="mt-[10px]">
         <Table
           data={EquipmentBusinessTableData}
           header={EquipmentBusinessHeader}
           hasPagination={true}
+          buttonLabel="등록"
+           buttonRadius="rounded-[100px]"
+           buttonWidth="w-[66px]"
+           onClick={handleRegistration}
         />
       </div>
       {showRegistration && (

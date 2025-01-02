@@ -4,6 +4,7 @@ import { IInput } from "./type";
 
 const TextInput = ({
   label,
+  labelColor,
   labelWidth = "w-[130px]",
   type,
   containerStyle,

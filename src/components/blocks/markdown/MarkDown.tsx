@@ -12,7 +12,7 @@ const MarkDown = ({editorConatinerStyles}:{editorConatinerStyles?:string}) => {
       insertImageAsBase64URI: true, // Upload images as base64 URI
       url: "your_upload_endpoint_here", // Endpoint to handle image uploads
     },
-    minHeight: "500px",
+    minHeight: "400px",
   };
 
   return (

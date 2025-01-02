@@ -2,6 +2,7 @@ import { InputProps } from "@nextui-org/input";
 
 export interface IInput extends InputProps {
   label?: string;
+  labelColor?:string
   labelWidth?: string;
   type: string;
   width?: string;

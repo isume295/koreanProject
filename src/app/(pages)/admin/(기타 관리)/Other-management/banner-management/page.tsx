@@ -7,15 +7,16 @@ import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
 
 const BannerManagement = () => {
   const [activePage, setActivePage] = useState(1);
-
+  const [selectedFirst, setSelectedFirst] = useState("전체");
+  const [selectedSecond, setSelectedSecond] = useState("전체");
   return (
     <div className="space-y-[20px]">
       <div className="flex justify-center items-center rounded-[100px] bg-[white] py-[10px] px-[30px] w-auto max-w-[500px] gap-[24px]">
         <span className="text-[14px] font-[400] text-[#333333]">등록일</span>
         <RadioButton
           options={["전체", "설정"]}
-          selectedValue="전체"
-          onChange={() => {}}
+          selectedValue={selectedFirst}
+          onChange={(value) => setSelectedFirst(value)}
           optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
         />
         <div className="flex justify-center items-center gap-[5px] text-[#333333]">
@@ -32,8 +33,8 @@ const BannerManagement = () => {
         <span className="text-[14px] font-[400] text-[#333333]">등록일</span>
         <RadioButton
           options={["전체", "설정", "종료"]}
-          selectedValue="전체"
-          onChange={() => {}}
+          selectedValue={selectedSecond}
+          onChange={(value) => setSelectedSecond(value)}
           optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
         />
       </div>

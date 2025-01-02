@@ -3,7 +3,7 @@ import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import React from "react";
+import React, { useState } from "react";
 
 const EquipmentTopContent = () => {
   const dropDownOptions = [
@@ -21,6 +21,8 @@ const EquipmentTopContent = () => {
     },
   ];
   const items = ["만원/40분", "만원/반일", "만원/일대", "만원/월대"];
+  const [selectedFirst, setSelectedFirst] = useState("임대 (장비+기사)");
+
   return (
     <div className="space-y-[20px]">
       <div className="flex gap-[20px]">
@@ -117,8 +119,8 @@ const EquipmentTopContent = () => {
           <span className="text-[14px] font-[400] text-[#333333]">구분</span>
           <RadioButton
             options={["임대 (장비+기사)", "스페어 (기사만)", "렌탈 (장비만)"]}
-            selectedValue="임대 (장비+기사)"
-            onChange={() => {}}
+            selectedValue={selectedFirst}
+            onChange={(value) => setSelectedFirst(value)}
             optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
           />
         </div>

@@ -53,18 +53,19 @@ const Table = ({
               ) : null}
 
               {buttonLabel && (
-                <div className="ml-auto"><Button
-                label={buttonLabel}
-                backgroundColor={"bg-[#404251]"}
-                width={buttonWidth}
-                borderRadius={buttonRadius}
-                textStyle={"text-[14px] font-[400] text-white"}
-                padding="py-4 px-6"
-                onPress={() => {
-                  onClick();
-                }}
-              /></div>
-                
+                <div className="ml-auto">
+                  <Button
+                    label={buttonLabel}
+                    backgroundColor={"bg-[#404251]"}
+                    width={buttonWidth}
+                    borderRadius={buttonRadius}
+                    textStyle={"text-[14px] font-[400] text-white"}
+                    padding="py-4 px-6"
+                    onPress={() => {
+                      onClick();
+                    }}
+                  />
+                </div>
                 // <button className="bg-[#255DF9] text-white font-[500] text-[14px] rounded-[5px] w-[106px] h-[40px]">
                 //   {buttonLabel}
                 // </button>

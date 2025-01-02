@@ -31,6 +31,7 @@ const TextInput = ({
           inputWrapper: "border-1 border-[##E4E5EA] bg-white rounded-[8px]",
         }}
         placeholder={placeholder}
+        labelColor={labelColor}
         type={type}
         labelColor={labelColor}
         {...rest}

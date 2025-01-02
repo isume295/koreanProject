@@ -32,6 +32,7 @@ const TextInput = ({
         }}
         placeholder={placeholder}
         type={type}
+        labelColor={labelColor}
         {...rest}
       />
     </div>

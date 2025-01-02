@@ -44,7 +44,7 @@ const Table = ({
           ],
         }}
         topContent={
-          <div className="flex flex-col gap-[28px]">
+          <div className="flex flex-col  gap-[28px]">
             <div className="flex justify-between items-center">
               {title ? (
                 <div className="font-[400] text-[16px] text-[#333333]">

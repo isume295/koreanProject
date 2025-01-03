@@ -1,5 +1,4 @@
 import React from "react";
-import EquipmentTopContent from "../../../(기타 관리)/Other-management/push-management/components/EquipmentTopContent";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import BusinessTable from "../components/BusinessTable";
 import EquipmentBusinessTopContent from "../components/EquipmentBusinessTopContent";

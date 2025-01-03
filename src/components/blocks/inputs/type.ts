@@ -1,4 +1,4 @@
-import { InputProps } from "@nextui-org/input";
+import { InputProps, TextAreaProps } from "@nextui-org/input";
 
 export interface IInput extends InputProps {
   label?: string;
@@ -8,9 +8,23 @@ export interface IInput extends InputProps {
   width?: string;
   placeholder: string;
   containerStyle?: string;
+  labelColor?: string;
+  height?: string;
+}
+
+export interface ITextArea extends TextAreaProps {
+  label?: string;
+  labelWidth?: string;
+  type: string;
+  width?: string;
+  placeholder: string;
+  containerStyle?: string;
+  labelColor?: string;
+  height?: string;
 }
 
 export interface ICameraInput {
+  containerStyle?: string;
   imageSrc: string;
   label: string;
 }

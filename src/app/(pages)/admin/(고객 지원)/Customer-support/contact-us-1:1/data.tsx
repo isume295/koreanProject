@@ -1,0 +1,85 @@
+const data = () => {
+  const contactUsHeader = [
+    { label: "번호" },
+    { label: "제목" },
+    { label: "구분" },
+    { label: "사업자명" },
+    { label: "휴대폰번호" },
+    { label: "등록일자" },
+    { label: "처리일자" },
+    { label: "관리자" },
+    { label: "상태" },
+  ];
+
+  const contactUsData = [
+    {
+      num: 6,
+      title: "조회는 어떻게 하나요?",
+      division: "장비사업자",
+      businessName: "사업자명",
+      phoneNumber: "01040121146",
+      registrationDate: "2023-08-29  20:23:46",
+      manager: "이중재",
+      processingDate: "2023-08-30  10:11:28",
+      situation: "대기",
+    },
+    {
+      num: 5,
+      title: "조회가 안되는데 어떻게 해요?",
+      division: "발주사",
+      businessName: "사업자명",
+      phoneNumber: "01040121146",
+      registrationDate: "2023-08-26  16:54:21",
+      manager: "이중재",
+      processingDate: "2023-08-28  12:25:19",
+      situation: "답변완료",
+    },
+    {
+      num: 4,
+      title: "결제는 없어요?",
+      division: "장비사업자",
+      businessName: "장비사업자",
+      phoneNumber: "01040121146",
+      registrationDate: "2023-08-25  12:36:05",
+      manager: "이중재",
+      processingDate: "2023-08-25  12:44:36",
+      situation: "답변완료",
+    },
+    {
+      num: 3,
+      title: "앱이 꺼져요...",
+      division: "발주사",
+      businessName: "사업자명",
+      phoneNumber: "01040121146",
+      registrationDate: "2023-08-25  10:02:39",
+      manager: "이중재",
+      processingDate: "2023-08-25  10:14:58",
+      situation: "답변완료",
+    },
+    {
+      num: 2,
+      title: "앱이 종료돼요...",
+      division: "장비사업자",
+      businessName: "사업자명",
+      phoneNumber: "01040121146",
+      registrationDate: "2023-08-23  11:25:51",
+      manager: "이중재",
+      processingDate: "2023-08-23  11:28:19",
+      situation: "답변완료",
+    },
+    {
+      num: 1,
+      title: "재미가 없어요...",
+      division: "발주사",
+      businessName: "사업자명",
+      phoneNumber: "01040121146",
+      registrationDate: "2023-08-22  18:14:50",
+      manager: "이중재",
+      processingDate: "2023-08-23  10:09:43",
+      situation: "답변완료",
+    },
+  ];
+  return { contactUsHeader, contactUsData };
+};
+
+export default data;

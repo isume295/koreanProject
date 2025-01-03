@@ -1,8 +1,9 @@
+"use client";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
-import React from "react";
+import React, { useState } from "react";
 
 const OrderingTopContent = () => {
   const dropDownOptions = [
@@ -19,6 +20,10 @@ const OrderingTopContent = () => {
       label: "전호번호",
     },
   ];
+  const [selectedFirst, setSelectedFirst] = useState("전체");
+
+  const [selectedSecond, setSelectedSecond] = useState("전체");
+  const [selectedThird, setSelectedThrid] = useState("전체");
   return (
     <div className="space-y-[20px]">
       <div className="flex justify-center items-center rounded-[100px] bg-[white] py-[10px] px-[30px] w-auto max-w-[580px] gap-[24px]">
@@ -36,8 +41,8 @@ const OrderingTopContent = () => {
         />
         <RadioButton
           options={["전체", "설정"]}
-          selectedValue="전체"
-          onChange={() => {}}
+          selectedValue={selectedFirst}
+          onChange={(value) => setSelectedFirst(value)}
           optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
         />
         <div className="flex justify-center items-center gap-[5px] text-[#333333]">
@@ -57,8 +62,8 @@ const OrderingTopContent = () => {
           </span>
           <RadioButton
             options={["전체", "설정", "종료"]}
-            selectedValue="전체"
-            onChange={() => {}}
+            selectedValue={selectedSecond}
+            onChange={(value) => setSelectedSecond(value)}
             optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
           />
         </div>
@@ -66,8 +71,8 @@ const OrderingTopContent = () => {
           <span className="text-[14px] font-[400] text-[#333333]">구분</span>
           <RadioButton
             options={["전체", "카카오", "네이버"]}
-            selectedValue="전체"
-            onChange={() => {}}
+            selectedValue={selectedThird}
+            onChange={(value) => setSelectedThrid(value)}
             optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
           />
         </div>

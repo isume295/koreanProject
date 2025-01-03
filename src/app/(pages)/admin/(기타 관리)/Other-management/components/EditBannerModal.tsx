@@ -4,9 +4,10 @@ import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import InputNoLabel from "@/src/components/blocks/inputs/datePickerInput";
 import TextInput from "@/src/components/blocks/inputs/Input";
-import React from "react";
+import React, { useState } from "react";
 
 const EditBannerModal = () => {
+  const [selectedFirst, setSelectedFirst] = useState("전체");
   return (
     <div className="flex flex-col text-[14px] space-y-[20px] bg-white p-10 w-[679px]">
       <div className="grid grid-cols-11 gap-[20px]">
@@ -27,8 +28,8 @@ const EditBannerModal = () => {
         <div className="col-span-9 py-[10px]">
           <RadioButton
             options={["전체", "발주사", "장비사업자"]}
-            selectedValue="전체"
-            onChange={() => {}}
+            selectedValue={selectedFirst}
+            onChange={(value) => setSelectedFirst(value)}
             optionStyles="flex flex-col gap-2 text-[14px] font-[400] text-[#333333]"
           />
         </div>

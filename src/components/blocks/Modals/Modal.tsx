@@ -12,21 +12,22 @@ import { Button } from "../buttons/Button";
 
 const Modal = ({
   closeButton = false,
-
   cancelBtnLabel,
   buttonLabel,
   isOpen,
   onOpenChange,
   children,
   modalWidthInPercent,
+  paddingHorizontal = "px-6 py-0",
 }: {
   isOpen: boolean;
   onOpenChange: () => void;
   children: ReactNode;
   closeButton?: boolean;
   cancelBtnLabel?: string;
-  buttonLabel: string;
+  buttonLabel?: string;
   modalWidthInPercent?: string;
+  paddingHorizontal?: string;
 }) => {
   // const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
@@ -37,12 +38,15 @@ const Modal = ({
       classNames={{
         closeButton: closeButton ? "" : "hidden",
         base: modalWidthInPercent,
+        body: paddingHorizontal,
+        footer: cancelBtnLabel && buttonLabel ? " " : "hidden",
       }}
     >
       <ModalContent className="w-full">
         {(onClose) => (
           <>
             <ModalBody>{children}</ModalBody>
+
             <ModalFooter>
               <div className="w-full flex justify-center items-center gap-3">
                 {cancelBtnLabel && (
@@ -55,14 +59,16 @@ const Modal = ({
                     onPress={onClose}
                   />
                 )}
-                <Button
-                  label={buttonLabel}
-                  backgroundColor={"bg-[#4A4E57]"}
-                  borderRadius={"rounded-[5px]"}
-                  textStyle={"font-[400] text-[14px] text-white"}
-                  width="w-[106px]"
-                  onPress={onClose}
-                />
+                {buttonLabel && (
+                  <Button
+                    label={buttonLabel || ""}
+                    backgroundColor={"bg-[#4A4E57]"}
+                    borderRadius={"rounded-[5px]"}
+                    textStyle={"font-[400] text-[14px] text-white"}
+                    width="w-[106px]"
+                    onPress={onClose}
+                  />
+                )}
               </div>
             </ModalFooter>
           </>

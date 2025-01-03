@@ -11,16 +11,14 @@ import React, { useState } from "react";
 import { SendModalHeader, SendModalTableData } from "./ListTableData";
 
 const DetailandEditForm = () => {
-  const [selectedValues, setSelectedValues] = useState<string[]>([]);
+ 
   const [selecetedValue, setSelectedValue] = useState("");
   const [showModal, setShowModal] = useState(false);
   const handleModalChange = () => {
     setShowModal(!showModal);
   };
 
-  const handleCheckboxChange = (updatedValues: string[]) => {
-    setSelectedValues(updatedValues); // Update the state
-  };
+ 
   const option1 = [
     { key: "1", label: "광역시도" },
     { key: "2", label: "광역시도" },
@@ -41,6 +39,12 @@ const DetailandEditForm = () => {
   ];
 
   const selectedOption3 = option3[0].key;
+  const [selectedValues, setSelectedValues] = useState<string[]>([]);
+
+  // Handle logic for changing selected values
+  const handleCheckboxChange = (updatedValues: string[]) => {
+    setSelectedValues(updatedValues);
+  };
   return (
     <section>
       {/* first from component */}
@@ -71,7 +75,7 @@ const DetailandEditForm = () => {
                 gap="gap-[20px]"
                 inputTextStyles=" text-sm text-[#404251] w-full"
                 inputStyles=""
-                Label={false}
+              Label={true}
               />
             </div>
           </div>

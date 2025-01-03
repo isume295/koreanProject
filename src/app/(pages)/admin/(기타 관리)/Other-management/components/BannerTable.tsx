@@ -1,5 +1,8 @@
 import React from "react";
 import { bannerType } from "./type";
+import Modal from "@/src/components/blocks/Modals/Modal";
+import { useDisclosure } from "@nextui-org/react";
+import EditBannerModal from "./EditBannerModal";
 
 const tabs = [
   "번호",
@@ -11,7 +14,6 @@ const tabs = [
   "등록일",
   "관리자",
 ];
-
 const data: bannerType[] = [
   {
     num: 6,
@@ -82,6 +84,11 @@ const data: bannerType[] = [
 ];
 
 const BannerTable = () => {
+  const {
+    isOpen: isOpenForm,
+    onOpen: onOpenWithForm,
+    onOpenChange: onOpenChangeWithForm,
+  } = useDisclosure();
   return (
     <div className="bg-[white] w-full text-[14px] h-[560px]">
       <div className="grid grid-cols-8 text-center bg-[#F1F3F6]">
@@ -105,7 +112,10 @@ const BannerTable = () => {
             <p>{row.creationTime}</p>
           </div>
 
-          <div className="flex items-center justify-center py-[10px] underline decoration-main-light-color text-main-light-color cursor-pointer border-r-[1px] border-r-[#F1F3F6]">
+          <div
+            onClick={onOpenWithForm}
+            className="flex items-center justify-center py-[10px] underline decoration-main-light-color text-main-light-color cursor-pointer border-r-[1px] border-r-[#F1F3F6]"
+          >
             {row.title}
           </div>
           <div className="flex items-center justify-center py-[10px] border-r-[1px] border-r-[#F1F3F6]">
@@ -125,6 +135,17 @@ const BannerTable = () => {
           </div>
         </div>
       ))}
+
+      <Modal
+        isOpen={isOpenForm}
+        onOpenChange={onOpenChangeWithForm}
+        buttonLabel={"해제"}
+        modalWidthInPercent="max-w-[50%]"
+      >
+        <div className=" w-full flex justify-center items-center pt-[10px] pb-[10px]">
+          <EditBannerModal />
+        </div>
+      </Modal>
     </div>
   );
 };

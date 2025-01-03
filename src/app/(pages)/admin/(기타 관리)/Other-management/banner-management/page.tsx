@@ -4,11 +4,19 @@ import BannerTable from "../components/BannerTable";
 import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import { SearchInput } from "@/src/components/blocks/inputs/SearchInput";
+import { useDisclosure } from "@nextui-org/react";
+import Modal from "@/src/components/blocks/Modals/Modal";
+import RegistrationModal from "../components/RegistrationModal";
 
 const BannerManagement = () => {
   const [activePage, setActivePage] = useState(1);
   const [selectedFirst, setSelectedFirst] = useState("전체");
   const [selectedSecond, setSelectedSecond] = useState("전체");
+  const {
+    isOpen: isOpenForm,
+    onOpen: onOpenWithForm,
+    onOpenChange: onOpenChangeWithForm,
+  } = useDisclosure();
   return (
     <div className="space-y-[20px]">
       <div className="flex justify-center items-center rounded-[100px] bg-[white] py-[10px] px-[30px] w-auto max-w-[500px] gap-[24px]">
@@ -52,6 +60,7 @@ const BannerManagement = () => {
               backgroundColor={"bg-[#404251]"}
               borderRadius={"rounded-full"}
               textStyle={"text-[14px]  text-white"}
+              onPress={onOpenWithForm}
             />
           </div>
         </div>
@@ -70,6 +79,16 @@ const BannerManagement = () => {
           ))}
         </div>
       </div>
+      <Modal
+        isOpen={isOpenForm}
+        onOpenChange={onOpenChangeWithForm}
+        buttonLabel={"해제"}
+        modalWidthInPercent="max-w-[50%]"
+      >
+        <div className=" w-full flex justify-center items-center pt-[10px] pb-[10px]">
+          <RegistrationModal />
+        </div>
+      </Modal>
     </div>
   );
 };

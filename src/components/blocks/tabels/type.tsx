@@ -9,12 +9,13 @@ export interface ITable {
   buttonLabel?: string;
   buttonWidth?: string;
   buttonRadius?: string;
-  content?:boolean
+  content?: boolean;
   onClick?: () => void;
+  contenBtntOnClick?: () => void;
 }
 
 export interface IHeader {
-  label: string|ReactNode;
+  label: string | ReactNode;
 }
 
 export interface IData {

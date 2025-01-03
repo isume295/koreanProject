@@ -24,6 +24,7 @@ const Table = ({
   buttonRadius = "rounded-[100px]",
   content = false,
   onClick = () => {},
+  contenBtntOnClick = () => {},
 }: ITable) => {
   const [selectedValue, setSelectedValue] = useState("");
   return (
@@ -89,6 +90,7 @@ const Table = ({
                   textStyle="text-sm text-white"
                   padding="py-[6px] px-[10px]"
                   width="w-[26px]"
+                  onPress={contenBtntOnClick}
                 />
               </div>
             )}

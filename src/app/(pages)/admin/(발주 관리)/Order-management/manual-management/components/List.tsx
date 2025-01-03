@@ -1,18 +1,33 @@
-'use client'
-import React from 'react'
-import TopContent from './TopContent'
+"use client";
+import React from "react";
+import TopContent from "./TopContent";
 
-import Table from '@/src/components/blocks/tabels/Table'
-import { ListHeader, ManualListData } from './ListTableData'
+import Table from "@/src/components/blocks/tabels/Table";
+import ListTableData from "./ListTableData";
+import { useDisclosure } from "@nextui-org/react";
+import DetailsModal from "./DetailsModal";
 
 const List = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { ListHeader, ManualListData } = ListTableData({ openForm: onOpen });
+
   return (
     <div className="flex flex-col gap-4">
-      <TopContent
+      <TopContent />
+      <Table
+        header={ListHeader}
+        hasPagination={true}
+        data={ManualListData}
+        title="N건의 게시물이 검색되었습니다"
       />
-      <Table header={ListHeader} hasPagination={true} data={ManualListData} title="N건의 게시물이 검색되었습니다"/>
-      </div>
-  )
-}
 
-export default List
+      <DetailsModal
+        isOpen={isOpen}
+        onOpen={onOpen}
+        onOpenChange={onOpenChange}
+      />
+    </div>
+  );
+};
+
+export default List;

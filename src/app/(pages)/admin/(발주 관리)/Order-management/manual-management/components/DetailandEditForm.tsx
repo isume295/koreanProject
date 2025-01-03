@@ -301,7 +301,7 @@ const DetailandEditForm = () => {
         </div>
       </div>
       {showModal && (
-        <ModalWrapper width="w-[680px]" height="h-[684px]">
+        <ModalWrapper width="w-[680px] p-5" height="h-[684px]">
           <div className="flex flex-col gap-2">
             <div className=" flex gap-5">
               <p className="min-w-[81px] text-sm text-[#404251]">구분</p>

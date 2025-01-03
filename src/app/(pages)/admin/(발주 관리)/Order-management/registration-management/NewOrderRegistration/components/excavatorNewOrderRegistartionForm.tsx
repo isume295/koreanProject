@@ -3,6 +3,7 @@ import { Button } from "@/src/components/blocks/buttons/Button";
 import Checkbox from "@/src/components/blocks/checkbox/Checkbox";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import CameraInput from "@/src/components/blocks/inputs/CameraInput";
+import cameraicon from "@/src/app/assets/mdi_camera.svg"
 import InputNoLabel from "@/src/components/blocks/inputs/datePickerInput";
 import ModalWrapper from "@/src/components/blocks/Modals/ModalWrapper";
 import { Textarea } from "@nextui-org/react";
@@ -199,7 +200,7 @@ const ExcavatorNewOrderRegistartionForm = () => {
             <p className="w-[80px] text-sm text-[#404251]">(선택)</p>
           </div>
           <div>
-            <CameraInput imageSrc="/src/app/assets/Camera" label="사진 첨부" />
+            <CameraInput imageSrc={cameraicon?.src} label="사진 첨부" />
           </div>
         </div>
         <div className="flex items-center gap-5">

@@ -37,9 +37,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -65,9 +65,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -93,9 +93,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -121,9 +121,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"}className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -149,9 +149,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -177,9 +177,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -205,9 +205,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -233,9 +233,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -261,9 +261,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 
@@ -289,9 +289,9 @@ export const RegistrationManagementData = [
       location:"전남 ㅇㅇ시 ㅇㅇ구",
       expense:"60만원",
       division:"임대 (장비+기사)",
-      voulenter:<Link href={""} className="text-[#429FFF] underline">4</Link>,
+      voulenter:<Link href={"/admin/Order-management/registration-management/volunter"} className="text-[#429FFF] underline">4</Link>,
       divisions:"임대 (장비+기사)",
-      ViewDetails:<Link href={""} className="text-[#429FFF] underline">상세보기</Link>
+      ViewDetails:<Link href={"/admin/Order-management/registration-management/viewDetail"} className="text-[#429FFF] underline">상세보기</Link>
 
 
 

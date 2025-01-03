@@ -1,6 +1,5 @@
 import React from "react";
 import { MultipleInputs } from "../../../(회원 관리)/Membership-Management/membership-management/equipmentExponent/components/MultipleInput";
-import MyPageInfo from "../../../(회원 관리)/Membership-Management/membership-management/equipmentExponent/components/MyPageInfo";
 import MyPageInformation from "./MyPageInformation";
 import { Button } from "@/src/components/blocks/buttons/Button";
 

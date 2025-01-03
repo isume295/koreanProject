@@ -1,5 +1,4 @@
 import { Button } from "@/src/components/blocks/buttons/Button";
-import CameraInput from "@/src/components/blocks/inputs/CameraInput";
 import React from "react";
 import EquipmentNameAndPicture from "./EquipmentNameAndPicture";
 

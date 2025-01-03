@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ReactNode } from "react";
 export interface ITable {
+  tabelWidth?: string;
   header: IHeader[];
   hasPagination?: boolean;
   title?: string;

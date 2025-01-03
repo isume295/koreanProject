@@ -1,8 +1,8 @@
-import { Input } from "@nextui-org/input";
+import { Textarea } from "@nextui-org/input";
 import React from "react";
-import { IInput } from "./type";
+import { ITextArea } from "./type";
 
-const TextInput = ({
+const TextAreaInput = ({
   labelColor = "text-[#A3A6AB]",
   label,
   labelWidth = "w-[130px]",
@@ -11,7 +11,7 @@ const TextInput = ({
   placeholder,
   height = "",
   ...rest
-}: IInput) => {
+}: ITextArea) => {
   return (
     <div
       className={`flex gap-2 w-full justify-center items-center ${containerStyle}`}
@@ -21,7 +21,7 @@ const TextInput = ({
           {label}
         </label>
       )}
-      <Input
+      <Textarea
         classNames={{
           mainWrapper: ` "w-full ${height}"`,
           input:
@@ -30,7 +30,6 @@ const TextInput = ({
           inputWrapper: "border-1 border-[##E4E5EA] bg-white rounded-[8px]",
         }}
         placeholder={placeholder}
-        labelColor={labelColor}
         type={type}
         {...rest}
       />
@@ -38,4 +37,4 @@ const TextInput = ({
   );
 };
 
-export default TextInput;
+export default TextAreaInput;

@@ -8,9 +8,9 @@ import WithDrawalApp from '@/src/app/(pages)/admin/(결제 관리)/Payment-manag
 const page = () => {
     const Tabs = [
         { title: "기본 정보", content: <ApplicantNameEnterprise/> },
-        { title: "마이페이지 정보", content: <UsageManagement/> },
-        {title:"장비 정보",content:<WithDrawalApp/>},
-        {title:"기사 정보",content:<WithDrawalApp/>}
+        { title: "마이페이지 정보", content: '' },
+        {title:"장비 정보",content:""},
+        {title:"기사 정보",content:''}
       ];
       return (
         <div className="">

@@ -18,7 +18,7 @@ const Modal = ({
   onOpenChange,
   children,
   modalWidthInPercent,
-  paddingHorizontal = "px-6 py-0",
+  paddingHorizontal = "px-6 py-5",
   footer = true,
 }: {
   isOpen: boolean;

@@ -3,6 +3,7 @@ import { Button } from "@/src/components/blocks/buttons/Button";
 import { RadioButton } from "@/src/components/blocks/buttons/RadioButton";
 import DropDown from "@/src/components/blocks/dropdown/DropDown";
 import InputNoLabel from "@/src/components/blocks/inputs/datePickerInput";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const PushRecordDetails = () => {
@@ -12,6 +13,12 @@ const PushRecordDetails = () => {
   const [selectedThird, setSelectedThrid] = useState("전체이용자");
 
   const [selectedFourth, setSelectedFourth] = useState("즉시");
+
+  const routes = useRouter();
+
+  const handleClick = () => {
+    routes.push("/admin/Other-management/push-management/preview");
+  };
 
   return (
     <div className="w-full bg-white p-10">
@@ -42,9 +49,7 @@ const PushRecordDetails = () => {
                 backgroundColor={"bg-[#A3A6AB]"}
                 borderRadius={"rounded-[5px]"}
                 textStyle={"w-[100px] text-white"}
-                // onPress={() => {
-                //   handleClick;
-                // }}
+                onPress={() => handleClick()}
               />
               <span className="text-[14px] text-[#A3A6AB]">00명 선택</span>
             </div>

@@ -19,6 +19,7 @@ const Modal = ({
   children,
   modalWidthInPercent,
   paddingHorizontal = "px-6 py-0",
+  footer = true,
 }: {
   isOpen: boolean;
   onOpenChange: () => void;
@@ -28,6 +29,7 @@ const Modal = ({
   buttonLabel?: string;
   modalWidthInPercent?: string;
   paddingHorizontal?: string;
+  footer?: boolean;
 }) => {
   // const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
@@ -39,7 +41,7 @@ const Modal = ({
         closeButton: closeButton ? "" : "hidden",
         base: modalWidthInPercent,
         body: paddingHorizontal,
-        footer: cancelBtnLabel && buttonLabel ? " " : "hidden",
+        footer: footer ? " " : "hidden",
       }}
     >
       <ModalContent className="w-full">

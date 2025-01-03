@@ -19,9 +19,7 @@ const DetailandEditForm = () => {
     onOpenChange: onOpenChangeWithForm,
   } = useDisclosure();
 
-  const handleCheckboxChange = (updatedValues: string[]) => {
-    setSelectedValues(updatedValues); // Update the state
-  };
+
   const option1 = [
     { key: "1", label: "광역시도" },
     { key: "2", label: "광역시도" },

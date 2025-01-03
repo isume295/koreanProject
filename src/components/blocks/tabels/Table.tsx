@@ -14,6 +14,7 @@ import { Button } from "../buttons/Button";
 import { RadioButton } from "../buttons/RadioButton";
 
 const Table = ({
+  tabelWidth = "w-full",
   header,
   data,
   hasPagination = false,
@@ -26,7 +27,7 @@ const Table = ({
 }: ITable) => {
   const [selectedValue, setSelectedValue] = useState("");
   return (
-    <div className="w-full">
+    <div className={`${tabelWidth}`}>
       <NextTable
         aria-label="Data Table"
         shadow="none"
